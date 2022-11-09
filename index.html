@@ -7,23 +7,8 @@
     <meta content="#43B581" data-react-helmet="true" name="theme-color" />
 <html lang="en">
 <head>
-<center>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content=
-        "width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="captcha.css">
-    <link rel="stylesheet" href=
-"https://use.fontawesome.com/releases/v5.15.3/css/all.css"
-        integrity=
-"sha384-SZXxX4whJ79/gErwcOYf+zWLeJdY/qpuqC4cAa9rOGUstPomtqpuNWT9wdPEn2fk"
-        crossorigin="anonymous">
-    <script src="captcha.js"></script>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://www.google.com/recaptcha/api.js"></script>
-    <title>reCAPTCHA</title>
+            <title>reCAPTCHA demo: Simple page</title>
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
 <style>
 body {
   background-image: url('https://i.ibb.co/8X5m2KK/Opera-Zrzut-ekranu-2022-11-09-031522-discord-com.png');
@@ -33,27 +18,10 @@ body {
 }
 </style>
 </head>
-<body onload="generate()">
-    <div id="user-input" class="inline">
-        <input type="text" id="submit"
-            placeholder="Captcha code" />
-    </div>
- 
-    <div class="inline" onclick="generate()">
-        <i class="fas fa-sync"></i>
-    </div>
- 
-    <div id="image" class="inline" selectable="False">
-    </div>
-    <input type="submit" id="btn" onclick="printmsg()" />
- 
-    <p id="key"></p>
-</body>
 <body>
-<form action="" method="post">
-Name: <input type="text" name="name"><br>
-City: <input type="text" name="city"><br><br>
-<div class="g-recaptcha" data-sitekey="6Lc4Su8iAAAAAM5Aw2TQNlxpURgLQ-gA2ZziSjXI"></div>
-<button class="g-recaptcha" data-sitekey="6Lc3Su8iAAAAADzARvaEbG8b4B7J5wYUy_6mE3s0" data-callback='onSubmit'data-action='submit'>Submit</button>
-</form>
+            <form action="?" method="POST">
+      <div class="g-recaptcha" data-sitekey="6Lc3Su8iAAAAADzARvaEbG8b4B7J5wYUy_6mE3s0"></div>
+      <br/>
+      <input type="submit" value="Submit">
+    </form>
 </body>
